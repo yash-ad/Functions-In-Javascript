@@ -3,7 +3,7 @@
 
 
 
-//Function declaration :=
+//1)Function declaration :=
 
 
 //1.Example Addition:-
@@ -61,8 +61,10 @@ subtractionOfNumbers(g,e); // The result is  -2
 
 const h = 9;
 const i = 8;
+const result = multiplyTheNumbers(h,i); //Here we called a function at the top, yes we can do that its a behaviour of javascript so called hoisting.
 
 function multiplyTheNumbers(x,y){
+
 
     const multiplyOperation = x * y;
 
@@ -71,9 +73,6 @@ function multiplyTheNumbers(x,y){
 
 }
 
-const result = multiplyTheNumbers(h,i);
-
-
 console.log("Result is : ",result); //Result is :  72
 
 
@@ -81,3 +80,93 @@ console.log("Result is : ",result); //Result is :  72
 
 
 //4.Division :-
+//Lets take an example of hoisting:-
+//Here we  have used a hoisting example or hoisting term that means its a behaviour of javascript declarations are hoisted to the top of scope,its basically relation to the  memory management.
+//Ofcourse we can declare our function at the top.
+
+function divideTheNumbers(x,y){
+
+    const divisionOperation = x % y;
+
+    return divisionOperation;
+
+}
+
+
+
+let k = 10;
+
+let l = 20;
+
+const getResult = divideTheNumbers(k,l);
+
+console.log("Dividation is : ",getResult); //Here the result is division of 10 and 20 is 10.
+
+
+
+
+//2)Function Expression:=
+
+//1.Example square :-
+
+const squareOfNumber = function(num)
+{
+
+    return num * num
+}
+
+console.log(squareOfNumber(3));
+console.log(squareOfNumber(4));
+console.log(squareOfNumber(5));
+
+
+
+//2.Example of addition :-
+
+let additionOfNumber = function(num){
+
+    return num + num;
+}
+
+console.log(additionOfNumber(6));
+console.log(additionOfNumber(7));
+console.log(additionOfNumber(8));
+
+
+
+//3.Example of Subtraction :-
+
+let subtractionOfNumber = function(value)
+{
+
+    return value - value;
+}
+
+
+console.log(subtractionOfNumber(9));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
