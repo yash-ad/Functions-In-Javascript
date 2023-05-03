@@ -107,6 +107,8 @@ console.log("Dividation is : ",getResult); //Here the result is division of 10 a
 
 //2)Function Expression:=
 
+//Here is between the function declaration and function expression the minor diferrence is function expression cannot hoisted.
+
 //1.Example square :-
 
 const squareOfNumber = function(num)
