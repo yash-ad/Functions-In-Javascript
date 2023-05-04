@@ -117,9 +117,9 @@ const squareOfNumber = function(num)
     return num * num
 }
 
-console.log(squareOfNumber(3));
-console.log(squareOfNumber(4));
-console.log(squareOfNumber(5));
+console.log(squareOfNumber(3)); //9
+console.log(squareOfNumber(4));//16
+console.log(squareOfNumber(5));//25
 
 
 
@@ -130,9 +130,9 @@ let additionOfNumber = function(num){
     return num + num;
 }
 
-console.log(additionOfNumber(6));
-console.log(additionOfNumber(7));
-console.log(additionOfNumber(8));
+console.log(additionOfNumber(6)); //12
+console.log(additionOfNumber(7)); //14
+console.log(additionOfNumber(8)); //16
 
 
 
@@ -145,7 +145,7 @@ let subtractionOfNumber = function(value)
 }
 
 
-console.log(subtractionOfNumber(9));
+console.log(subtractionOfNumber(9)); //0
 
 
 
