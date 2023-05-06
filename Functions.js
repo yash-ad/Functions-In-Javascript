@@ -165,24 +165,23 @@ console.log(subtractionOfNumber(9)); //0
  //Task 6:Call the letterFinder and pass it as its first argument as the string "test" and as its second argument, the string "t".
 
 
- function letterFinder(word,match){
- for(let i = 0 ; i < word.length ; i++)
- {
+function letterFinder(word,match){
+for(let i = 0 ; i < word.length ; i++)
+{
 if(word[i] === match){
 
-    console.log('Found the', match, 'at', i);
+    console.log('Found the', match, 'at position', i)
 }
 else{
-
     console.log('---No match found at', i)
+
 }
 
- }
+}
 
- }
- letterFinder("test","e");
+}
 
-
+letterFinder("TEST","T");
 
 
 
