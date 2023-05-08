@@ -195,33 +195,6 @@ letterFinder("test","e");
 //No match found at 3
 
 
-//Code explanation :-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //.Example 4 :-
 //Your task in this exercise is to code a function which will be able to take a word and locate the position of a chosen letter in that given word. 
 //Vowel founder example using function, forLoop , and control If statement:-
@@ -248,10 +221,64 @@ findVowelsInAlphabets("AEIOU","I");
 
 
 
+//Example 5 :-
+
+function arrayBuilder(one,two,three){
+    
+    let arr = [];
+
+arr.push(one);
+arr.push(two);
+arr.push(three);
+return arr;
+
+}
+//Additionally i can save this function to call a variable
+//Lets create a variable to save this function in a variable.
+
+let simpleArray = arrayBuilder("Mango","Banana","Kiwi");
+
+//And now I can console the values that are stored in simpleArray:-
+console.log(simpleArray);
 
 
 
 
+
+//Example 6 :-
+//Write a function to find mean on 5 number:-
+
+
+let mean = function(a,b,c,d)
+{
+
+return (a+b+c+d) / 4;
+
+}
+
+console.log(mean(4,5,6,7)); //5.5
+
+
+//Example 7 :-
+//Functional programming:-
+
+
+let currencyOne = 100;
+let currencyTwo = 0;
+let exchangeRate = 1.2;
+
+function convertCurrency(amount,rate){
+
+return  amount * rate;
+
+
+}
+
+//lets find the output of currencyTwo:-
+
+currencyTwo = convertCurrency(currencyOne,exchangeRate);
+
+console.log(currencyTwo); //120
 
 
 
