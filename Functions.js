@@ -252,11 +252,17 @@ console.log(simpleArray);
 let mean = function(a,b,c,d)
 {
 
-return (a+b+c+d) / 4;
+return (a+b+c+d) / 4; //4+5+6+7 = 22 and 22/4 = 5.5
 
 }
 
-console.log(mean(4,5,6,7)); //5.5
+console.log(mean(4,5,6,7));//4+5+6+7 = 22 and 22/4 = 5.5 
+//5.5
+
+
+
+
+
 
 
 //Example 7 :-
@@ -276,9 +282,9 @@ return  amount * rate;
 
 //lets find the output of currencyTwo:-
 
-currencyTwo = convertCurrency(currencyOne,exchangeRate);
+currencyTwo = convertCurrency(currencyOne,exchangeRate); //(100,1.2) 100 multiply by 2.
 
-console.log(currencyTwo); //120
+console.log(currencyTwo); // the output is 120
 
 
 
