@@ -26,8 +26,8 @@ console.log("The result of a + b is : ",(c+a));
 
 sumOfTheNumbers(a,b);  //This is a calling for function
 //The result of a + b is :  3
-//The result of a + b is :  5 
-//The result of a + b is :  4
+//The result of b + c is :  5 
+//The result of c + a is :  4
 
 
 
@@ -107,7 +107,6 @@ console.log("Dividation is : ",getResult); //Here the result is division of 10 a
 
 //2)Function Expression:=
 
-//Here is between the function declaration and function expression the minor diferrence is function expression cannot hoisted.
 
 //1.Example square :-
 
@@ -168,12 +167,17 @@ console.log(subtractionOfNumber(9)); //0
  //Task 6:Call the letterFinder and pass it as its first argument as the string "test" and as its second argument, the string "t".
 
 
+
+ //A function that accepts two parameters
 function letterFinder(word,match){
 for(let i = 0 ; i < word.length ; i++)
+//This loop exists when i is equal to the length of the word.
 {
+
+//Check if the current character, word[i] , is equal to the match.
 if(word[i] === match){
 
-    console.log('Found the', match, 'at Index', i)
+    console.log('Found the', match, 'at Position', i)
 }
 else{
     console.log('---No match found at', i)
@@ -186,9 +190,10 @@ else{
 
 letterFinder("test","e");
 //No match found at 0
-//No match found at 1
+//Found the e at position 1
 //No match found at 2
-//Found the D at position 3
+//No match found at 3
+
 
 //Code explanation :-
 
@@ -219,9 +224,9 @@ letterFinder("test","e");
 
 //.Example 4 :-
 //Your task in this exercise is to code a function which will be able to take a word and locate the position of a chosen letter in that given word. 
-//Vowel founder example usind function,forLoop,and contorl If statement:-
+//Vowel founder example using function, forLoop , and control If statement:-
 function findVowelsInAlphabets(word,match){
-    for(let i = 0; i < word.length; i++){
+    for( let i = 0; i < word.length; i++ ){
         if( word[i] === match){
 
             console.log(" vowel found : " , match , "At Index" , i)
