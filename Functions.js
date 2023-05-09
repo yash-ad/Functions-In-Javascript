@@ -321,6 +321,9 @@ console.log("Night");
 myDay();
 
 
+
+
+
 //Example 10 :-
 
 //Example of conversion:-
@@ -339,12 +342,34 @@ addTwoNumbers(3,"4"); //34 string
 
 
 
+//Example 11:-
+
+function sumOfNums(number1,number2){
 
 
+//let additionofNums = number1 + number2
+//return additionofNums;
+return number1 + number2; //This also an optional way to return.
+
+}
+const resultOf = sumOfNums(4,4); // 8
+console.log(resultOf); 
+// Here the interesting fact of function is the value will get an undefined since many functions,  by default , return the value of UNDEFINED.Function is built so as to no have the explicity set return value, it gets the default return value of undefined.
 
 
+//Example 12:-
+
+function loginUserMessage(username){
+return `${username} just logged in`;
 
 
+}
+
+//const getUserName = loginUserMessage(); //undefined just logged in, Since its not defined thatswhy.
+
+const getUserName = loginUserMessage("Yash"); //Function stored in a variable.
+
+console.log(getUserName); //Yash just logged in
 
 
 

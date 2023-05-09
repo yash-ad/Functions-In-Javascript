@@ -1,0 +1,1 @@
+//Functions with objects and array in javascrip
