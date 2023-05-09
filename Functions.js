@@ -287,6 +287,66 @@ currencyTwo = convertCurrency(currencyOne,exchangeRate); //(100,1.2) 100 multipl
 console.log(currencyTwo); // the output is 120
 
 
+//Example 8 :-
+//Function calling and recursion:-
+
+let counter = 4
+function example()
+{
+ console.log(counter);
+counter = counter - 1;
+if(counter === 0) return ;
+example();
+
+}
+example();
+
+
+//When a functon calls itself,this is whats known as Recursion.
+//Recursion is an alternative way to run repetitive code without the use of loops.
+
+
+
+//Example 9 :-
+function myDay()
+{
+console.log("Morning");
+console.log("Afternoon");
+console.log("Evening");
+console.log("Night");
+
+//myDay(); //What will happen if run this code , the function will run over and over, as there is no condition to stop it.
+}
+
+myDay();
+
+
+//Example 10 :-
+
+//Example of conversion:-
+
+function addTwoNumbers(num1,num2)
+{
+
+    console.log(num1+num2);
+
+
+}
+
+addTwoNumbers(3,"4"); //34 string
+//Since in  javascript + operator is can be used for both addition and string concatenation, which one or both operands are string ,the + operator performs string concatenation instead of string,javascript will concatenate 3 and "4" to produce the string "34".
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
