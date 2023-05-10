@@ -1,1 +1,29 @@
 //Global and local scope in javascript:-
+//Block scope variables are called a slocal variables.
+//Scope examples:-
+
+//let   a = 10;
+//const b = 20;
+//var   c = 30;
+
+//console.log(a); //10
+//console.log(b); //20
+//console.log(c); //30
+
+var c = 300;
+let a = 100;
+{
+    let   a = 10;
+    console.log(`Inner Value which is block scope :${a}`); //10 let a in block scope and let a in global scope and local scope ,their values are totally different and independent from each other.
+
+    const b = 20;
+    var   c = 30;  
+}                   //Curly braces is known as scope.
+
+
+
+//console.log(a);  // a is not defined because its an outer scope
+//console.log(b);  // b is not defined because its an outer scope
+console.log(c)     //30 because its a global variable , best practice is to avoid var keyword.
+
+console.log(`Outer Value which is Global scope :${a}`); // 100   let a in block scope and let a in global scope and local scope , their values are totally different and independent from each other.
