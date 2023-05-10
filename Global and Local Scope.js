@@ -55,6 +55,24 @@ const userName = "Yash";
 fnOne();
 
 
+//Using If statement for condition (Control flow) :-
+
+if(true)
+{
+
+    const myName = "Yash";
+
+    if(myName === "Yash")
+    {
+      const contactSite = " LinkedIn";
+      console.log(myName + contactSite); //Yash LinkedIn
+      
+    }
+//console.log(contactSite); //contactSite is not defined , it will caught an error.
+
+
+}
+//console.log(myName); //myName is not defined , it will caught an error.
 
 
 
