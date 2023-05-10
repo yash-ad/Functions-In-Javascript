@@ -1,0 +1,1 @@
+//Global and local scope in javascript:-
